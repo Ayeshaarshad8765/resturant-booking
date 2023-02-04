@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <title>website design</title>
+  
+   <link rel="stylesheet" type="text/css" href="work.css">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/cssfamily=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,800;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,100;1,200;1,400;1,500&family=Raleway:ital,wght@0,400;0,500;0,600;0,800;1,100;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+body{
+    background: video;
+}
+.containeer{
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "raleway";
+    font-weight: 600;
+}
+ 
+p{
+    font-family: "Montserrat" ;
+    font-weight: 500;
+}
+
+a{
+    font-family: "raleway";
+    font-weight: 600;
+}
+
+.img-responsive {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}  
+nav{
+    position: fixed;
+    background-color: rgb(0, 204, 255);
+    width: 100%;
+    z-index: 99;
+}  
+.menu-par {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-par h2 {
+    color: white;
+    font-size: 40px;
+}
+.nav ul li a {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.nav ul li a:before {
+    content: "s";
+    position: absolute;
+    top: 0;
+    left: 10px;
+    background-color: #fff;
+    width: 0%;
+    height: 2px;
+    font-size: 0px;
+    transition: all 0.5s ease;
+}
+.nav ul li a:hover:before {
+    width: 74%;
+
+}
+.nav ul li {
+    display: inline-block;}
+    .nav-fixed {
+        background-color: white;
+        box-shadow: 2px 2px #bbb;
+    }
+    .nav-fixed h2 {
+        color: #4811e2
+    }
+    main{
+        width: 100%;
+        height: 88vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+    section .a {
+        border: crimson;
+        padding: 12px 30px;
+        border-radius: 4px;
+        outline: burlywood;
+        text-transform: uppercase;
+        font-weight: 500;
+        text-decoration:none ;
+        letter-spacing: 1px;
+    }
+    section .button{
+        background-color: rgb(0, 204, 255);;
+    }
+    .change-content:after{
+        
+        animation: changetext 10s infinite linear;
+    }
+    
+    .video {
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    video#video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    main#welcome {
+        width: 100%;
+        height: 40vh;
+        padding-top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .image {
+        width: 80%;
+        height: 40%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(images/1.jpeg);
+        background-size: 100% 100%;
+        box-shadow: 1x 2px 10px 5px  black;
+        animation: slider 9s infinite;
+        margin-bottom: 100px;
+    }
+    @keyframes slider{
+        0%{ background-image: url(images/1.jpeg);}
+        35%{background-image: url(images/2.jpeg);}
+        55%{background-image: url(images/3.jpeg);}
+        75%{background-image: url(images/4.jpeg);}
+        95%{background-image: url(images/5.jpeg);}
+    }
+    #book {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/sea.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: -0;
+        color: #fff;
+        
+    }
+    #book {
+        display: flex;
+    }
+
+    .book-content-par {
+        display: flex;
+        padding-right: 10px;
+    }
+    .book-content {
+       display: flex 1;
+    }
+    .book-form {
+        display: flex 1;}
+.book-form {
+    display: flex; width: 50%;
+}
+input[type="text"]:focus,select:focus, textarea:focus {
+    border: 2px soild #af9ce0;
+    outline: none;
+}
+input[type="text"], select, textarea {
+    width: 100%;
+    background-color: black; 
+    color: royalblue;
+    border: 1px solid #ccc; 
+    margin-top: 10px; margin-bottom: 20px; padding: 10px;
+}
+input[type="submit"]:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+input[type=submit] {
+    background-color: rgba(0,0,0,0.5); color: #fff; width: 100%;
+    border: 1px solid #fff; padding: 12px 0px; transition: all 0.5s ease; cursor: pointer;
+}
+section #gallery {
+    margin: 100px 0px;}
+.gallery-item img {
+    width: 360px; height: 300px; object-fit: cover; transition: all 0.5s ease;
+}
+#filter-gal-par {
+    display: flex; 
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.gallery-item img:hover {
+    transform: scale(1.1,1.1); background-color: rgba(255, 255, 255, 0.5);
+    opacity: 0.7;
+}
+.gallery-item {
+    margin-bottom: 20px; overflow: hidden;
+}
+button.filter-button {
+    background-color: #00ccff;; color: #fff; border: 1px soild #00ccff; padding: 10px 20px; margin: 20px 0px; font-size: 18px; cursor: pointer; 
+    border-radius: 5px; transition: all 0.5s ease-in;
+}
+button.filter-button:focus {
+    background-color: white; color: rgb(0, 204, 255); outline: none;
+}
+#water-slider {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/beach1.jpeg);
+    background-attachment: fixed; background-repeat: no-repeat; background-size: cover; height: 90vh; align-items: center;  justify-content: center; overflow: hidden; color: #fff; text-align: center;
+}
+#water-slider h3 {
+    font-size: 30px;
+}
+ .slider {
+    position: absolute; width: 300px; height: 300px; justify-content: center; align-items: center; transform-style: preserve-3d; animation: rotate 30s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: perspective(1000px) rotateY(0dg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slider span {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; transform-origin: center;
+    transform-style: preserve-3d; transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+.slider span img {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 20px; object-fit: cover;
+    transition: 2s;
+}
+.slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+section#blog h3 {
+    text-align: center; color: #0026ff; width: 100%; height: 60px; font-size: 50px; background-color: #00ccff;
+}
+section#blog {
+    margin: 100px 0px;
+}
+.blog-par {
+    display: flex; margin: 50px 0px;
+}
+.blog-content {
+    display: flex; align-items: center;
+}
+.blog-info-par ul li {
+    display: inline; font-size: 13px; color: #999; font-weight: 600; text-transform: uppercase;
+}
+.blog-info-par {
+    margin-left: 30px;
+}
+.blog-img-par img {
+    width: 600px; height: 240px;
+}
+.blog-info-par h4 {
+    color: #00ccff; font-size: 20px; margin: 5px 0px;
+}
+.blog-info-par p {
+    color: #777; line-height: 23px; font-size: 14px;
+}
+footer {
+    border: top 7px; color:  #00ccff ;
+}
+.footer-par {
+    border-top:3px soild #00ccff ;  display: flex; justify-content: space-between; margin: 40px 0px;
+}
+h3.footer-logo-h {
+    font-size: 30px;
+    color: #00ccff;
+}
+.footer-1.footer-info h3 {
+    color: #00ccff; font-size: 20px; margin-bottom: 20px;
+}
+.foter-1.footer-info ul li a {
+    color: #333; padding-bottom: 13px; display: inline-block; transition: all 0.5s ease;
+}
+.footer-1.footer-info a{
+    color: #333; padding-bottom: 10px; display: inline-block; transition: all 0.5s ease;
+}
+  </style>
+</head>
+   
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Travel</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu-hover" href="index.html">HOME</a></li>
+                        <li><a class="menu-hover" href="index.html">Travel</a></li>
+                        <li><a class="menu-hover" href="index.html">Book Now</a></li>
+                        <li><a class="menu-hover" href="index.html">Holiday</a></li>
+                        <li><a class="menu-hover" href="index.html">Blog</a></li>
+                     </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section>
+                <h1 class="animate__animated animate__heartBeat"><font color=white>"Happiness is closer than you think",<span class="change-contain">
+                "Adventure awaits,Go find it","Dont be a tourist,be a traveler."</font></span></h1>
+                <p><font color=white>Asporiores,tenetur,blenditiis,quaerat odit ex exercitationem parriatur quibusdam veritatis 
+                    quisquam<br> Lobariosam esse beatea hic perferendis.Lorem ipsum dolor sit amet.
+                </p></font>
+                <a href="#">READ MORE</a>
+            </main>
+        </section>
+        <div class="video">
+            <video id="video" autoplay loop muted>
+                <source src="Scuba Diving - 699 (1).mp4" type="video/mp4"/>
+            </video><br><br><br>
+        </div>
+        <br><br><br>
+        <main id=welcome>
+      <section>
+                <h2> <font color=#00ccff size=8>He official travel site of the friendly Fiji Island</font></h2>
+                <p><font color=#777 size=4>When an unknow printer took a gallery of type and scramble it to make a type specimen</font></p><br><br><br><br><br>
+                </section> <br><br><br>
+        </main><div class="image"></div>
+        <br> <br><br<br><br> <br><br><br><br><br><br><br><br>
+<section id="book">
+    <div class="container">
+        <div class="book-counter-par">
+            <br><br><br><br>
+           <h1><font color=white size=50%>Book Now</font></h1> <br> 
+              <img src="images/logo.jpeg" width="150px">
+            </div>
+        </div>
+            <div class="book-form" style="margin-left: 50px;" >
+             <form>
+                 <br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="text" id="fname" name="firstname" placeholder="Your Lname..">
+                    <select id="country" name="country">
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <textarea  id="subject" name="subject" placeholder="Write something">
+                    </textarea>
+                    <input type="submit" value="Submit">
+                </form>
+             </div>
+        </div>
+    </div>
+</section>
+<br><br><br>
+<section id="gallery">
+<div class="container">
+    <div class="row">
+        <div align="center" class="filter-btn-par">
+          <a href="#"><button class="filter-button" data-filter="All">All</button></a>
+           <a href="#"><button class="filter-button" data-filter="Diving">Diving</button></a>
+           <a href="#"><button class="filter-button" data-filter="nature">Nature</button></a>
+           <a href="#"><button class="filter-button" data-filter="health">Health</button></a>
+        </div>
+         <div id="filter-gal-par">
+            <div class="gallery-item filter diving">
+                <img src="images/d1.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter nature">
+                <img src="images/n1.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter diving">
+                <img src="images/d2.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter health">
+                <img src="images/h1.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter health">
+                <img src="images/h2.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter nature">
+                <img src="images/n2.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter diving">
+                <img src="images/d2.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter nature">
+                <img src="images/n3.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter diving">
+                <img src="images/d3.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter health">
+                <img src="images/h3.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter diving">
+                <img src="images/d4.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter health">
+                <img src="images/h4.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter diving">
+                <img src="images/d4.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter nature">
+                <img src="images/n4.jpeg" class="img-responsive">
+            </div>
+            <div class="gallery-item filter nature">
+                <img src="images/n5.jpeg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<br><br><br><br>
+  <section id="water-slider">
+    <h3> Start Plaining Your Dream Holiday</h3><br><br><br>
+          <div class="slider" style="width: 20%;margin-left: 40%;">
+    <span style="--i:1;"><img src="images/bank.jpeg" alt=""></span>
+    <span style="--i:2;"><img src="images/d16.jpeg" alt=""></span>
+    <span style="--i:3;"><img src="images/bahamas.jpeg" alt=""></span>
+    <span style="--i:4;"><img src="images/egypt.jpeg" alt=""></span>
+    <span style="--i:5;"><img src="images/italy.jpeg" alt=""></span>
+    <span style="--i:6;"><img src="images/eng.jpeg" alt=""></span>
+    <span style="--i:7;"><img src="images/aus.jpeg" alt=""></span>
+    <span style="--i:8;"><img src="images/france.jpeg" alt=""></span>
+ 
+         </div>
+</section>
+<section id="blog">
+    <div class="container">
+        <h3>News And Events</h3>
+        <div class="blog-par">
+            <div class="blog-content">
+                <div class="blog-img-par">
+                  <img src="images/france.jpeg"class="img-responsive"> 
+                </div>
+                <div class="blog-info-par">
+                    <ul>
+                        <li>MARK TWAIN</li>
+                        <li>05.01.2022</li>
+                    </ul>
+                    <h4>France</h4>
+                    <p>French Republic (French: République française[12]), is a transcontinental country spanning Western Europe and overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans</p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-img-par">
+                  <img src="images/d16.jpeg"class="img-responsive"> 
+                </div>
+                <div class="blog-info-par">
+                    <ul>
+                        <li>MARK TWAIN</li>
+                        <li>05.01.2022</li>
+                    </ul>
+                    <h4>Dubai</h4>
+                    <p>Dubai (/duːˈbaɪ/ doo-BY; Arabic: دبي, romanized: Dubayy [dʊˈbajj], Gulf Arabic pronunciation: [dəˈbaj]) is the most populous city in the United Arab Emirates (UAE) and the capital of the Emirate of Dubai</p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-img-par">
+                  <img src="images/egypt.jpeg"class="img-responsive"> 
+                </div>
+                <div class="blog-info-par">
+                    <ul>
+                        <li>MARK TWAIN</li>
+                        <li>05.01.2022</li>
+                    </ul>
+                    <h4>Egypt</h4>
+                    <p>Egypt (Arabic: مِصر, romanized: Miṣr), officially the Arab Republic of Egypt, is a transcontinental country spanning the northeast corner of Africa and the Sinai Peninsula of Western Asia.</p>
+                </div>
+            </div>
+            <div class="blog-content">
+                <div class="blog-img-par">
+                  <img src="images/bank.jpeg"class="img-responsive"> 
+                </div>
+                <div class="blog-info-par">
+                    <ul>
+                        <li>MARK TWAIN</li>
+                        <li>05.01.2022</li>
+                    </ul>
+                    <h4>Bangkok</h4>
+                    <p>Bangkok[a] is the capital and most populous city of Thailand, also known by its endonym Krung Thep Maha Nakhon[b] or colloquially Krung Thep</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+<footer>
+    <div class="container">
+        <div class="footer-par">
+            <div class="footer-1">
+                <h3 class="fotter-logo-h" style="margin-right: 10px;"><font color=#00ccff size=7>Travel</font></h3>
+             </div>
+             <div class="footer-1 footer-info">
+                <h3>Tourism Fiji</h3>
+                <ul>
+                    <li><a href="#">Tourism Fiji One</a></li>
+                    <li><a href="#">Tourism Fiji Two</a></li>
+                    <li><a href="#">Tourism Fiji Three</a></li>
+                    <li><a href="#">Tourism Fiji Four</a></li>
+                </ul>
+            </div>
+            <div class="footer-1 footer-info">
+                <h3>Find Your Happy</h3>
+                <ul>
+                    <li><a href="#">Tourism Fiji One</a></li>
+                    <li><a href="#">Tourism Fiji Two</a></li>
+                    <li><a href="#">Tourism Fiji Three</a></li>
+                </ul>
+            </div>
+            <div class="footer-1 footer-info">
+                <h3>Need Help?</h3>
+                <ul>
+                    <li><a href="#">Tourism Fiji One</a></li>
+                    <li><a href="#">Tourism Fiji Two</a></li> </li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright" style="background-color: #00ccff; color: #fff; text-align: center; padding: 8px 0px;">Copyright o 2022 Travel</p>
+    </div>
+</footer>
+
+                     
+    
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/external.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
